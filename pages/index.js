@@ -1,11 +1,13 @@
 import React from "react";
 import axios from "axios";
+import HomeHeader from "../components/HomeHeader";
+import HomeLatestPosts from "../components/HomeLatestPosts";
 
 function Home({ posts }) {
   return (
     <div>
-      <h1>{posts[0].title}</h1>
-      <h1>{posts[1].title}</h1>
+      <HomeHeader />
+      <HomeLatestPosts posts={posts} />
     </div>
   );
 }
